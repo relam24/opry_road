@@ -16,6 +16,75 @@ router.get('/new', (req, res) => {
 	res.render('new.ejs');
 });
 
+// Seed Data
+router.get('/seed', (req, res) => {
+	Opry.create([
+		{
+			name: 'Bluebird Cafe',
+			location: 'Hillsboro Pike, Nashville',
+			img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkbSP5oAUZAfNDC8ybV5EYPn-34rNIQluEPojEux0Q5bEq35-G',
+			description: 'The Bluebird Cafe is one of the world’s preeminent listening rooms and the venue has gained worldwide recognition as a songwriter’s performance space where the “heroes behind the hits” perform their own songs; songs that have been recorded by chart-topping artists in all genres of music.  Located in a small strip mall outside of downtown Nashville, the 90 seat venue is unassuming in appearance but some of the most significant songwriters and artists have performed on this stage.',
+			rating: 5
+		},
+		{
+			name: 'The Basement',
+			location: '8th Avenue S, Nashville',
+			img: 'https://3hkj9i2chtjx336clgvx1skh-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/Nashville-Music-The-Basement-Tara-Misu-small-1-1024x950.png',
+			description: 'The underground rock scene lives here. The Basement features both national and local bands on the rise, cause let\'s face it, you gotta start somewhere. Fueled by the desire to become the next rock gods, The Basement offers a room for bands to fine tune their craft while making a name for themselves',
+			rating: 4
+		},
+		{
+			name: 'The High Watt | Mercy Lounge',
+			location: 'Cannery Row, Nashville',
+			img: 'https://image-ticketfly.imgix.net/00/02/35/14/87-og.jpg?w=600&h=413',
+			description: 'The world\'s finest dive bar and music venue. Established 2012 in Nashville, TN. Locally owned and independently run.',
+			rating: 3
+		},
+		{
+			name: 'Exit/In',
+			location: 'Elliston Pl, Nashville',
+			img: 'https://cdn.ticketfly.com/wp-content/themes/exitin-v2/og-logo.png',
+			description: 'Nashville is predominantly a country town; there are no vagaries about where its musical legacy lies. But we also know that universal statements are never accurate – there’s also room in Nashville for rockers, rappers, punks, DJs, metalheads, etc. (It IS called “Music City,” not “Country City,” after all.) And those music lovers on the margins, the ones who prefer something other than the twang and honkey-tonk of its city’s signature sound, need a home to congregate in. They need Exit/In.',
+			rating: 3
+		},
+		{
+			name: 'The Station Inn',
+			location: '12th Ave S, Nashville',
+			img: 'https://i.pinimg.com/originals/4a/fc/50/4afc50d24736b9675f676b9d1dc4e6f0.jpg',
+			description: 'Bluegrass and Roots Music. You’ll find the best of it right here at the Station Inn ',
+			rating: 4
+		},
+		{
+			name: '12th and Porter',
+			location: '12th Ave N, Nashville',
+			img: 'https://caseyderhakmusic.com/wp-content/uploads/112th-and-porter.jpg',
+			description: 'At 12th & Porter, we pride ourselves on being one of the most distinguished concert venues in the Southeastern United States because of our state-of-the-art production equipment, prime location in the heart of downtown Nashville, and our dedication to providing the best possible concert experience for our guests and artists every single night.',
+			rating: 4
+		},
+		{
+			name: 'The East Room',
+			location: 'Gallatin Ave, Nashville',
+			img: 'http://eastroom.ca/wp-content/themes/er2016b/img/logo-black-small-square.png',
+			description: 'The East Room is a music/arts venue in East Nashville. Events have included indie/rock bands, comedy, dance parties, and theater.',
+			rating: 3
+		},
+		{
+			name: 'The Sutler',
+			location: '8th Avenue S, Nashville',
+			img: 'https://i0.wp.com/www.anniereeves.com/wp-content/uploads/2014/10/the-sutler-stage.png?resize=760%2C509',
+			description: 'The historic Sutler was originally opened in 1976 by country radio personality Johnny Potts. Part venue, part restaurant, and part dive bar, the Sutler was a social hub for locals and the Nashville music community, as well as a waypoint for travelers and touring acts from far and wide.',
+			rating: 3
+		},
+		{
+			name: 'The End',
+			location: 'Elliston Pl, Nashville',
+			img: 'https://i.ytimg.com/vi/CKujeJZt6Q4/maxresdefault.jpg',
+			description: 'Welcome to The End! Located on the revered “Rock Block” of Elliston Place, The End is Nashville’s premier small-capacity Rock N Roll dive bar. We have played host to several of the world’s finest and most raucous bands over quite a long time and still provide a small club experience like nowhere else you’ll find.',
+			rating: 2
+		}
+	]);
+});
+
 // Show Route
 router.get('/:id', (req, res) => {
 	Opry.findById(req.params.id, (err, foundOpry) => {

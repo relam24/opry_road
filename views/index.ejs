@@ -7,21 +7,20 @@
 	</head>
 	<body>
 			<h4> Venues </h4>
+			    <div>
 				<ul>
 						<% for (let i = 0; i < Opry.length; i++){ %>
 					<li>
 							<a href='/<%=Opry[i].id; %>'>
-						<img src='<%=Tournaments[i].img%>'/>
+						<img src='<%=Opry[i].img%>'/>
+						<h5><a href='/<%=Opry[i].id; %>/'>
+								<%=Opry[i].name; %></a></h5>
+
 						</a>
 					</li>
 		 				<% } %>
 				</ul>
-						<div>
-						<% for (let i = 0; i < Opry.length; i++){ %>
-						<h5><a href='/<%=Opry[i].id; %>/'>
-											<%=Opry[i].name; %></a></h5>
-						</div>
-				<% } %>
+				</div>
 				<% include ../partials/footer.ejs %>
 	</body>
 </html>
