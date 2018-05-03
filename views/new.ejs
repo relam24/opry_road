@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<% include ../partials/head.ejs %>
+	</head>
+	<body class='container'>
+		<div>
+		<div>
+	<h1 class='header'> Add New Tournament </h1>
+		</div>
+		<div class='row'>
+	<form action='/tournaments' method='POST'>
+		<div>
+			Name: <input type='text' name='name' />
+		</div>
+			<br />
+		<div>
+			Location: <input type='text' name='location' />
+		</div>
+			<br />
+		<div>
+			Img: <input type='url' name='img'  />
+		</div>
+			<br />
+		<div>
+			Description: <input type='text' name='description' />
+		</div>
+			<br />
+		<div>
+			Rating: <input type='number' name='rating' />
+			<br />
+		</div>
+		<div>
+		<input type='submit' value='Add New Tournament' />
+	</div>
+	</form>
+	</div>
+	<footer>
+		<% include ../partials/footer.ejs %>
+	</footer>
+
+	</body>
+</html>

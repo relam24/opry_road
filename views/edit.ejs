@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<% include ../partials/head.ejs %>
+	</head>
+	<body>
+		<div>
+			<div>
+		<h1> Edit Venues </h1>
+			</div>
+			<div>
+		<form action='/<%=Opry.id%>?_method=PUT' method='POST'>
+		<div>
+			Name: <input type='text' name='name' value='<%=Opry.name %>' />
+		</div>
+			<br />
+		<div>
+			Location: <input type='text' name='location' value='<%=Opry.location %>' />
+		</div>
+			<br />
+		<div>
+			Img: <input type='url' name='img' value='<%=Opry.img %>' />
+		</div>
+			<br />
+		<div>
+			Description: <input type='text' name='description'
+				value='<%=Opry.description %>' />
+		</div>
+			<br />
+		<div>
+			Rating: <input type='number' name='rating'
+			value='<%=Opry.rating %>' />
+		</div>
+			<br />
+		<div>
+			<input type='submit' value='Submit Venue' />
+		</div>
+		</form>
+		</div>
+		<footer>
+			<% include ../partials/footer.ejs %>
+		</footer>
+	</body>
+</html>

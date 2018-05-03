@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<% include ../partials/head.ejs %>
+	</head>
+	<body>
+		<div>
+		</div>
+		<div>
+				<h3>
+			<%=Opry.name; %>
+		</h3>
+		</div>
+		<div>
+			<h4>
+		<%=Opry.location; %>
+	</h4>
+		</div>
+		<div>
+			<h4>
+		<%=Opry.rating; %>
+	</h4>
+		</div>
+		<div>
+		<img src='<%=Opry.img%>'/>
+		</div>
+		<div>
+		Rating: <%=Opry.rating; %>
+		</div>
+		</div>
+		<button>
+			<!-- link for edit page ------->
+			<a href='/<%=Opry.id; %>/edit'> Edit Venue</a>
+			<!--delete form here before closing li -->
+			<!--make action delete with method override -->
+						<form action='/<%=Opry.id; %>?_method=DELETE' method='POST'>
+							<input type='submit' value='Delete Venue'  />
+						</form>
+			<a href='/'>Back to Venues</a>
+		</button>
+		<footer>
+			<% include ../partials/footer.ejs %>
+		</footer>
+	</body>
+</html>

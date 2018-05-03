@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<% inclue ../partials/head.ejs %>
+	</head>
+	<body>
+		<ul>
+				<% for (let i = 0; i < Opry.length; i++) { %>
+			<li>
+				<a href='/<%=Opry[i].id; %>'>
+					<img src='<%=Opry[i].img%>'/>
+				</a>
+			</li>
+					<% } %>
+		</ul>
+	</body>
+</html>
