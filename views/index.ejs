@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<% inclue ../partials/head.ejs %>
+		<% include ../partials/head.ejs %>
 	</head>
 	<body>
-		<ul>
-				<% for (let i = 0; i < Opry.length; i++) { %>
-			<li>
-				<a href='/<%=Opry[i].id; %>'>
-					<img src='<%=Opry[i].img%>'/>
-				</a>
-			</li>
-					<% } %>
-		</ul>
+			<h4> Venues </h4>
+				<ul>
+						<% for (let i = 0; i < Opry.length; i++){ %>
+					<li>
+							<a href='/<%=Opry[i].id; %>'>
+						<img src='<%=Tournaments[i].img%>'/>
+						</a>
+					</li>
+		 				<% } %>
+				</ul>
+						<div>
+						<% for (let i = 0; i < Opry.length; i++){ %>
+						<h5><a href='/<%=Opry[i].id; %>/'>
+											<%=Opry[i].name; %></a></h5>
+						</div>
+				<% } %>
+				<% include ../partials/footer.ejs %>
 	</body>
 </html>
