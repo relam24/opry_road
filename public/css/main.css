@@ -49,6 +49,7 @@ h5 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 8px;
+	border: solid 2px rgb(174,168,245);
 }
 
 ul {
