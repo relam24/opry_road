@@ -6,17 +6,17 @@ body {
 	align-content: center;
 	width: 100%;
 	background-color: black;
+	border: solid 2px rgb(174,168,245);
 }
 
 header {
-	background-color: pink;
 	position: relative;
 	background-image: url(https://thebluegrasssituation.com/wp-content/uploads/2017/08/opry.jpg);
 	color: white;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 558px;
+	height: 564px;
 	font-size: 18px;
 }
 
@@ -67,6 +67,7 @@ ul {
 	width: 600px;
 	align-self: center;
 	align-items: center;
+	border-radius: 8px;
 }
 
 .imgone {
@@ -87,7 +88,7 @@ ul {
 }
 
 .description {
-	width: 280px;
+	width: 240px;
 }
 
 .location {
@@ -96,4 +97,15 @@ ul {
 
 button {
 	border-radius: 5px;
+}
+
+.form {
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+	width: 200px;
+	height: 300px;
+	text-align: left;
+	align-items: center;
+	align-self: center;
 }
