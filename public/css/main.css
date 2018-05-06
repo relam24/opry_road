@@ -16,26 +16,25 @@ div {
 	background-color: blue;
 }
 
-.columns {
-	background-color: green;
-	width: 100%;
-}
-
-li {
+ul {
 	background-color: red;
 	flex-direction: row;
+	align-items: center;
+	align-self: center;
+	text-align: center;
 	width: 100%;
 }
 
-.img {
-	height: 800px;
-	width: 800px;
+.showimg {
+	height: 600px;
+	width: 600px;
 	align-self: center;
+	align-items: center;
 }
 
 .imgone {
-	height: 400px;
-	width: 600px;
+	height: 680px;
+	width: 800px;
 }
 
 .venues {
