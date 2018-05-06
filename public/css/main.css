@@ -17,6 +17,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 558px;
+	font-size: 18px;
 }
 
 .opry {
@@ -79,4 +80,20 @@ ul {
 	width: 100%;
 	font-size: 28px;
 	color: rgb(36,26,175);
+}
+
+.name {
+	font-size: 30px;
+}
+
+.description {
+	width: 280px;
+}
+
+.location {
+	font-size: 24px;
+}
+
+button {
+	border-radius: 5px;
 }
