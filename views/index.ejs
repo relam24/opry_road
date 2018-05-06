@@ -6,13 +6,13 @@
 		<% include ../partials/head.ejs %>
 	</head>
 	<body>
-			<h4> Venues </h4>
-			    <div>
-				<ul class="columns">
+			<h4 class="venues"> Venues </h4>
+			    <div class="columns">
+				<ul>
 						<% for (let i = 0; i < Opry.length; i++){ %>
-					<li>
+					<li class="column">
 							<a href='/<%=Opry[i].id; %>'>
-						<img src='<%=Opry[i].img%>'/>
+						<img class="imgone" src='<%=Opry[i].img%>'/>
 						<h5><a href='/<%=Opry[i].id; %>/'>
 								<%=Opry[i].name; %></a></h5>
 							</a>

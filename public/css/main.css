@@ -1,4 +1,45 @@
-img {
-	height: 200px;
-	width: 200px;
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	align-content: center;
+	width: 100%;
+}
+
+header {
+	background-color: pink;
+	position: relative;
+}
+
+div {
+	background-color: blue;
+}
+
+.columns {
+	background-color: green;
+	width: 100%;
+}
+
+li {
+	background-color: red;
+	flex-direction: row;
+	width: 100%;
+}
+
+.img {
+	height: 800px;
+	width: 800px;
+	align-self: center;
+}
+
+.imgone {
+	height: 400px;
+	width: 600px;
+}
+
+.venues {
+	background-color: yellow;
+	height: 50px;
+	width: 100%;
 }
