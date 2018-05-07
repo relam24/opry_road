@@ -11,12 +11,12 @@
 		<h1> Edit Venues </h1>
 			</div>
 		<form action='/<%=Opry.id%>?_method=PUT' method='POST'>
-			Name: <input type='text' name='name' value='<%=Opry.name %>' />
-			Location: <input type='text' name='location' value='<%=Opry.location %>' />
-			Img: <input type='url' name='img' value='<%=Opry.img %>' />
-			Description: <input type='text' name='description'
+			Name: <input class="input" type='text' name='name' value='<%=Opry.name %>' />
+			Location: <input class="input" type='text' name='location' value='<%=Opry.location %>' />
+			Img: <input class="input" type='url' name='img' value='<%=Opry.img %>' />
+			Description: <input class="input" type='text' name='description'
 			value='<%=Opry.review %>' />
-			Rating: <input type='number' name='rating'
+			Rating: <input class="input" type='number' name='rating'
 			value='<%=Opry.rating %>' />
 			<input type='submit' value='Submit Tournament' />
 		</div>
