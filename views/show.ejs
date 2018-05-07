@@ -31,6 +31,26 @@
 			<i class="material-icons">music_note</i>
 		</div>
 		</div>
+		<div id="map"></div>
+		<script>
+			function initMap() {
+				let Lat = <%=Opry.lat%>;
+				let Long = <%=Opry.long%>;
+				let LatLong = {lat: Lat, long: Long};
+
+				let map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 10,
+					center: LatLong
+				});
+
+				let marker = new google.maps.Marker({
+					position: LatLong,
+					map: map,
+					title: 'Venues'
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
 		<button>
 			<!-- link for edit page ------->
 			<a href='/<%=Opry.id; %>/edit'> Edit Venue</a>

@@ -4,7 +4,9 @@ const oprySchema = new mongoose.Schema({
 	location: {type: String, require: true},
 	img: {type: String, require: true},
 	description: {type: String, require: true},
-	rating: Number
+	rating: Number,
+	lat: Number,
+	long: Number
 });
 
 // collection
